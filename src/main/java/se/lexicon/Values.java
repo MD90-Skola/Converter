@@ -1,7 +1,7 @@
 package se.lexicon;
 
 public class Values {
-    // Här sparas valutakurser (kan ändras vid behov)
+    // Valutakurser
     double sekToEur = 0.087;
     double sekToDkk = 0.65;
     double sekToUsd = 0.095;
@@ -18,7 +18,7 @@ public class Values {
         } else if (currency.equals("NOK")) {
             return amount * sekToNok;
         } else {
-            return 0; // Om fel valuta valts
+            return 0;
         }
     }
 }
